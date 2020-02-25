@@ -1,3 +1,6 @@
+# `Josh Wolsborn Notes`
+These are the solutions to the rust embedded discovery book that I worked on and followed via the book listed below.  All chapters involving the F3 or Bluetooth controllers are left out as I didn't have those pieces available to me.  This was an extremely fun and interesting project to work on as it involved directly manipulating the registers to set the value of certain pins to create LEDs to illuminate.  It also allowed me to play with the magnetometer and accelerometer that were present on the board.  Many of these solutions closely follow what was in the book as I had difficulty with a few of the last chapters.  Overall this was a great first dive into embedded programming as I had never done it before.
+
 # `Discovery`
 
 > Discover the world of microcontrollers through Rust
