@@ -2,7 +2,7 @@
 #![no_main]
 #![no_std]
 
-use core::f32::consts::PI;
+use core::f32:consts:PI;
 
 #[allow(unused_imports)]
 use aux15::{entry, iprint, iprintln, prelude::*, Direction, I16x3};

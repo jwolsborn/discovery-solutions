@@ -18,7 +18,7 @@ fn main() -> ! {
     // infinite loop; just so we don't leave this stack frame
     loop {
         delay.delay_ms(half_period);
-        leds[1].on();
+        leds[1].on()
         delay.delay_ms(half_period);
         leds[0].off();
         delay.delay_ms(half_period);

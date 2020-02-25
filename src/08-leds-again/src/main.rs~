@@ -12,14 +12,14 @@ fn main() -> ! {
     rcc.ahbenr.modify(|_, w| w.iopeen().set_bit());
 
     gpioe.moder.modify(|_, w| {
-        w.moder8().output();
-        w.moder9().output();
-        w.moder10().output();
-        w.moder11().output();
-        w.moder12().output();
-        w.moder13().output();
-        w.moder14().output();
-        w.moder15().output()
+        w.moder8().set_bit();
+        w.moder9().set_bit();
+        w.moder10().set_bit();
+        w.moder11().set_bit();
+        w.moder12().set_bit();
+        w.moder13().set_bit();
+        w.moder14().set_bit();
+        w.moder15().set_bit();
     });
 
     // Turn on all the LEDs in the compass

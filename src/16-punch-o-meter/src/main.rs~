@@ -20,7 +20,7 @@ fn main() -> ! {
     let mut max_g = 0.;
 
     loop {
-        let g_x = f32::from(lsm303dlhc.accel().unwrap().x).abs() * SENSITIVITY;
+        let g_x = f32::from(lasm303dlhc.accel().unwrap().x).abs() * SENSITIVITY;
 
         match instant {
             None => {
@@ -32,7 +32,7 @@ fn main() -> ! {
                 }
             }
 
-            Some(ref instant) if instant.elapsed() < measurement_time => {
+            Some(ref_instant) if instant.elapsed() < measurement_time => {
                 if g_x > max_g {
                     max_g = g_x;
                 }
@@ -40,7 +40,7 @@ fn main() -> ! {
             _ => {
                 iprintln!(&mut itm.stim[0], "Max acceleration: {}g", max_g);
                 instant = None;
-                max_g = 0.;
+                max_g = 0;
             }
         }
 

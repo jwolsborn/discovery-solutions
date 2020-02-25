@@ -57,7 +57,7 @@ fn main() -> ! {
             let y = ((y_h << 8) + y_l) as i16;
             let z = ((z_h << 8) + z_l) as i16;
 
-            iprintln!(&mut itm.stim[0], "{:?}", (x,y,z));
+            iprintln!(&mut itm.stim[0], "{:?}", buffer);
 
             delay.delay_ms(1_000_u16);
 
